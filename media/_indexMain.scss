@@ -1,0 +1,72 @@
+.main_container{
+    width: 900px;
+    margin: 0 auto;
+
+    .seccionUno{
+        width: 100%;
+        a{
+            img{
+                width: 100%;
+            }
+        }
+    }
+
+    .seccionDos{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        color: $azul;
+        margin: 0px 0px 100px 0;
+
+        h3{
+            font-weight: 900;
+            font-size: $textoP;
+        }
+
+        &__info{
+            width: 33%;
+            font-size: $textoP;
+        }
+
+        &__icono{
+            color: #000;
+            font-size: $textoG;
+        }
+
+        &__parrafo{
+            color: #000;
+            font-size: $textoP;
+        }
+    }
+
+    .seccionTres{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 50px;
+        
+        article{
+            width: 30%;
+
+            .seccionTres__titulo{
+                text-align: center;
+                color: $azul;
+            }
+
+            img{
+                width: 100%;
+            }
+        }
+
+        &__categoria{
+            transition: all ease 0.3s;
+
+            &:hover{
+                opacity: 0.9;
+                box-shadow: 0px 0px 10px $azul;
+            }
+        }
+    }
+}
+
+

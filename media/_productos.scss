@@ -1,0 +1,24 @@
+main{
+
+    div{
+        h2{
+            text-align: center;
+            margin: 30px 0 15px 0;
+            color: $azul;
+            font-size: $textoG;
+            font-weight: bold;
+        }
+    }
+
+    .main_container_productos{
+        max-width: 900px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin: 50px auto 50px auto;
+
+        .producto{
+            margin: 15px 0 15px 0;
+        }
+    }
+}

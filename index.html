@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Encuentra en Mastik los mejores productos, servicios e informacón relevante para mascotas. Compra online o en nuestras tiendas físicas. Alimentos, accesorios y más.">
+    <meta name="keywords" content="Mastik - PetShop. Perros, Gatos, Roedores, Accesorios, Juguetes, Mascotas">
+    <meta name="author" content="Jesus Cobarrubia">
+    <title>Mastik</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Atma:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link rel="stylesheet" href="./media/estilos.css">
+</head>
+<body>
+    <!-- INICIO DEL HEADER -->
+    <header>
+        <section class="header_container">
+            <a href="index.html" class="header_logo"><img src="./media/logo_mastik.png" alt="Ir al inicio de la página web" width="100"></a>
+
+            <h1 class="header_titulo">MASTIK</h1>
+
+            <nav>
+                <ul class="header_nav">
+                    <li><a href="index.html" class="header_enlace">Inicio</a></li>
+                    <li><a href="nosotros.html" class="header_enlace">Nosotros</a></li>
+                    <li class="sub_container"><a href="productos.html" class="header_enlace">Productos</a>
+                        <ul class="header_nav_sub">
+                            <li><a href="#" class="sub_enlace">Perros</a></li>
+                            <li><a href="#" class="sub_enlace">Gatos</a></li>
+                            <li><a href="#" class="sub_enlace">Roedores</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="blog.html" class="header_enlace">Blog</a></li>
+                    <li><a href="contacto.html" class="header_enlace">Contacto</a></li>
+                </ul>
+            </nav>
+
+            <div class="header_shopping">
+                <a href="#" ype="button" class="btn" data-toggle="modal" data-target="#exampleModalCenter"><i class="fas fa-shopping-cart icono_carrito" id="carrito"></i></a>
+            
+            <!-- MODAL CARRITO -->
+            <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">Carrito de Compras</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        </div>
+                        <div class="modal-body">
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" <!--data-dismiss="modal"-->Vaciar</button>
+                        <button type="button" class="btn btn-primary">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+                <span id="contador" class="contador">0</span>
+            </div>
+            </div>
+        </section>
+    </header> 
+    <!-- FIN DEL HEADER-->
+
+    <!-- INICIO DEL MAIN -->    
+    <main>
+        <section class="main_container">
+            <!-- SLIDER -->
+            <section class="seccionUno">
+                    <a href="#"><img class="seccionUno__imagen" src="./media/petshop2.jpg" alt="Imagen decorativa Pet Shop"></a>
+            </section>
+
+            <!-- ENVIO, METODOS DE PAGO, COMPRA SEGURA -->
+            <section class="seccionDos">
+                <article class="seccionDos__info">
+                   <i class="seccionDos__icono fas fa-motorcycle"></i>
+                   <h3>ENVIAMOS TU COMPRA</h3>
+                   <p class="seccionDos__parrafo">Entregas a todo el país</p>
+                </article>
+
+                <article class="seccionDos__info seccionDos__info--marginLeft">
+                    <i class="seccionDos__icono fas fa-credit-card"></i>
+                    <h3>MÉTODOS DE PAGO</h3>
+                    <p class="seccionDos__parrafo">Cuotas sin interés</p>
+                </article>
+
+                <article class="seccionDos__info seccionDos__info--marginLeft">
+                    <i class="seccionDos__icono fas fa-lock"></i>
+                    <h3>COMPRA PROTEGIDA</h3>
+                    <p class="seccionDos__parrafo">Si no es lo que esperas, te devolvemos el dinero.</p>
+                </article>
+            </section>
+
+        <!-- CATEGORIAS -->
+            <section class="seccionTres">
+                <article>
+                    <h2 class="seccionTres__titulo">GATOS</h2>
+                    <a href="#"><img src="./media/gato2.jpg" alt="Click para acceder a productos y accesorios para Gatos" class="seccionTres__categoria"></a>
+                </article>
+
+                <article>
+                    <h2 class="seccionTres__titulo">PERROS</h2>
+                    <a href="#"><img src="./media/perro2.jpg" alt="Click para acceder a productos y accesorios para Perros" class="seccionTres__categoria"></a>
+                </article>
+
+                <article>
+                    <h2 class="seccionTres__titulo">ROEDORES</h2>
+                    <a href="#"><img src="./media/conejo2.jpg" alt="Click para acceder a productos y accesorios para Roedores" class="seccionTres__categoria"></a>
+                </article>
+            </section>        
+        </section>
+    </main>
+    <!-- FIN DEL MAIN -->          
+        
+    <!-- INICIO DEL FOOTER -->
+    <footer>
+        <section class="footer_container">
+            <div class="divNave">
+                <h3>NAVEGACIÓN</h3>
+                <ul class="footer_nav">
+                    <li><a href="index.html" class="footer_nav_enlace">Inicio</a></li>
+                    <li><a href="nosotros.html" class="footer_nav_enlace">Nosotros</a></li>
+                    <li><a href="productos.html" class="footer_nav_enlace">Productos</a></li>
+                    <li><a href="blog.html" class="footer_nav_enlace">Blog</a></li>
+                    <li><a href="contacto.html" class="footer_nav_enlace">Contacto</a></li>
+                </ul>
+            </div>
+
+            <div class="divRedes">
+                <h3>NUESTRAS REDES</h3>
+                <ul class="footer_redes">
+                    <li><a href="#" class="footer_redes_enlace"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="#" class="footer_redes_enlace"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#" class="footer_redes_enlace"><i class="fab fa-twitter"></i></a></li>
+                </ul>
+            </div>
+
+            <div class="divContac">
+                <h3>CONTACTANOS</h3>
+                <ul class="footer_contacto">
+                    <li><a href="#" class="footer_contacto_enlace"><img src="./media/telf.png" alt="Teléfono de contacto" width="20px"><span class="info">123456789</span></a></li>
+                    <li><a href="#" class="footer_contacto_enlace"><img src="./media/email.png" alt="Email de contacto" width="20px"><span class="info">mastikarg@gmail.com</span></a></li>
+                    <li><a href="#" class="footer_contacto_enlace"><img src="./media/ubicacion.png" alt="Ubicación para la entrega de productos" width="20px"><span class="info">Buenos Aires, Argentina</span></a></li>
+                </ul>
+            </div>
+        </section>
+    </footer>
+    <!-- FIN DEL FOOTER -->    
+
+    <script src="js/interaccion.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>

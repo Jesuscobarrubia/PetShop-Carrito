@@ -1,0 +1,113 @@
+header{
+    width: 100%;
+    background: $azul;
+
+    .header_container{
+        max-width: 1100px;
+        margin: 0 auto;
+        position: relative;
+
+        .header_logo{
+            position: absolute;
+            margin: 5px 0 0 80px;
+            border: 1px solid rgba(255, 255, 255, 0.438);
+            border-radius: 100%;
+        }
+
+        .header_titulo{
+            font-weight: bold;
+            text-align: center;
+            padding: 15px 0 50px 0;
+            font-size: 2.5rem;
+            color: $amarillo;
+            letter-spacing: 5px;
+            text-shadow: 0 0 10px #000;
+        }
+
+        nav{
+            .header_nav{
+                display: flex;
+                margin: 0 auto;
+                width: 60%;
+                justify-content: space-around;
+                list-style: none;
+
+                li{
+                    .header_enlace{
+                        text-decoration: none;
+                        color: white;
+                        font-size: $textoP;
+                        transition: all ease 0.3s ;
+                        &:hover{
+                            color: #000;
+                        }
+                    }
+                }
+
+                .sub_container{
+                    position: relative; 
+                    
+                    .header_nav_sub{
+                        list-style: none;
+                        display: none;
+
+                        .sub_enlace{
+                            text-decoration: none;
+                            color: white;
+                            transition: all ease 0.3s;
+                            &:hover{
+                                background: rgba(0, 0, 0, 0.425);
+                                color: white;
+                                display: block;
+                                font-size: $textoP;
+                            }
+                        }   
+                    }
+
+                    &:hover ul{
+                        display: block;
+                        position: absolute;
+                        background: $azul;
+                        width: 100%;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+
+        .header_shopping{
+            position: absolute;
+            top: 0;
+            right: 0;
+            margin: 15px 15px 0 0;
+            display: flex;
+            align-items: center;
+
+            .icono_carrito{
+                font-size: $textoG;
+                color: #fff;
+                transition: all ease 0.3s ;
+                
+                &:hover{
+                    color: #000;
+                }
+            }
+
+            .contador{
+                background: white;
+                font-size: $textoP;
+                text-align: center;
+                color: $azul;
+                border-radius: 10px;
+                margin: 0 0 0px 10px;
+                padding: 0 5px 0 5px;
+                &:hover{
+                    color: #fff;
+                    background: $azul;
+                    transition: all ease 0.3s ;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,316 @@
+@media screen and (max-width:768px){
+    
+    html{
+        font-size: 13px;
+
+        .header_container{
+            width: 100%;
+            .header_logo{
+                left: -50px;
+                top: 10px;
+            }
+        }
+    
+        .main_container{
+            max-width: 700px;
+            width: 100%;
+        }
+
+        .footer_container{
+            width: 100%;
+        }
+    
+        .blog_container{
+            max-width: 700px;
+            width: 100%;
+        }
+    
+        .n-container{
+            padding: 20px;
+        }
+    
+        .contacto_container{
+            .izquierda{
+                width: 30%;
+                padding-left: 10px;
+    
+                iframe{
+                    width: 300px;
+                    height: 329px;
+                }
+            }
+    
+            .derecha{
+                width: 50%;
+                padding-right: 10px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:650px){
+
+    html{
+        font-size: 13px;
+
+        .header_container{
+            .header_logo{
+                display: none;
+            }
+            
+            .header_nav{
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                height: 187px;
+            }
+        }
+            
+        main{
+            .main_container{
+                max-width: 640px;
+                width: 100%;
+                margin: 0 auto; 
+                
+                .seccionUno{
+                    img{
+                        width: 100%;
+                    }
+                }
+                
+                .seccionDos{
+                    width: 100%;
+                    flex-direction: column;
+                    align-items: center;
+                    
+                    &__info{
+                        margin-bottom: 30px;
+                    }
+                }
+                
+                .seccionTres{
+                    width: 100%;
+                    flex-direction: column;
+                    align-items: center;
+                    
+                    article{
+                        width: 70%;
+                        margin: 0 auto;
+                    }
+                    
+                    img{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+            
+        footer{
+            .footer_container{
+                max-width: 640px;
+                width: 100%;
+                .divRedes{
+                    display: none;
+                }
+            }
+        }
+            
+        .blog_container{
+            max-width: 600px;
+            
+            .b-articulo__titulo{
+                margin-bottom: 0px;
+            }
+            
+            .b-articulo__enlaceP{
+                bottom: 0px;
+            }
+
+            .b-none{
+                display: none;
+            }
+        }
+            
+        .contacto_container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            
+            .izquierda{
+                width: 70%;
+                iframe{
+                    width: 95%;
+                }
+            }
+            
+            .derecha{
+                width: 70%;
+            }
+        }
+
+        .productos_relacionados{
+            .none{
+                display: none;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:500px){
+    
+    html{
+        font-size: 12px;
+        main{
+            .main_container{
+                width: 100%;
+                margin: 0 auto;
+                
+                .seccionUno{
+                    width: 100%;
+                    a{
+                        img{
+                            width: 100%;
+                        }
+                    }
+                }
+                
+                .seccionDos{
+                    width: 100%;
+                    margin-top: 50px;    
+                }
+        
+                .seccionTres{
+                    width: 100%;
+                }
+            }
+        }
+    
+        footer{
+            .footer_container{
+                width: 100%;
+            }
+        }
+
+        .productos_relacionados{
+            .none_cuatro{
+                display: none;
+            }
+        }
+
+        .blog_container{
+            max-width: 450px;
+            width: 100%;
+
+            .b-articulo__titulo{
+                margin-top: 50px;
+            }
+            .b-articulo__parrafo{
+                display: none;
+            }
+        }
+    
+        .contacto_container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+    
+            .izquierda{
+                width: 80%;
+            }
+
+            .derecha{
+                width: 92%;
+                margin-top: 50px;
+                form{
+                    .reset_send{
+                        margin-top: 50px;
+                        font-size: 1.5rem;
+                    }
+
+                    textarea{
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:360px){
+
+    html{
+        main{
+            .main_container{
+                width: 100%;
+                margin: 0 auto;
+        
+                .seccionUno{
+                    width: 100%;
+                    a{
+                        img{
+                            width: 100%;
+                        }
+                    }
+                }
+        
+                .seccionDos{
+                    width: 100%;
+                }
+        
+                .seccionTres{
+                    width: 100%;
+                }
+            }
+        
+            footer{
+                .footer_container{
+                    width: 260px;
+                    .divNave{
+                        .footer_nav{
+                            text-align: center;
+                        }
+                    }
+                    .divContac{
+                        display: none;
+                    }
+                }
+            }
+
+            .productos_relacionados{
+                .none_dos{
+                    display: none;
+                }
+            }
+        
+            .blog_container{
+                width: 350px;
+                .b-articulo__titulo{
+                    font-size: 1.5rem;
+                    margin-top: 5px;
+                }
+        
+                .b-articulo__parrafo{
+                    display: none;
+                }
+        
+                .b-articulo__enlaceP{
+                    display: block;
+                    font-size: small;
+                    right: 5px;
+                }
+            }
+        
+            .contacto_container{        
+                .izquierda{
+                    display: none;
+                }
+        
+                .derecha{
+                    width: 350px;
+                    margin-left: 3px;
+                }
+            }
+        }
+    }
+}
